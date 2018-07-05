@@ -1,0 +1,119 @@
+
+.AnalysisBody{
+    width:1000px;
+    margin:0 auto;
+    min-height: 800px;
+    color: #000;
+}
+.Ana-top{
+    margin:20px auto;
+    text-align: center;
+    font-size: 30px;
+}
+.method-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.method-title a{
+    color:#000;
+    text-decoration: none;
+}
+.method-title a:hover{
+    color:#3C3C3C;
+    text-decoration: none;
+}
+.Ana-list{
+    border: 1px solid #cbcbcb;
+    padding:10px 15px;
+    width:750px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+.Ana-list .show-img{
+    width:230px;
+    height:150px;
+    margin-left: 20px;
+}
+.Ana-main{
+    font-size: 14px;
+    width:500px;
+    float: left;
+}
+.method-content{
+    line-height: 23px;
+}
+.Look-case{
+    left:14px;
+    bottom: 10px;
+    position: absolute;
+}
+.Look-case a{
+    color: #ff6501;
+    text-decoration: none;
+}
+.Look-case a:hover{
+    color:red;
+    text-decoration: underline;
+}
+.close-div{
+    display: none;
+    position: absolute;
+    top: 0; left: 20px; bottom: 0; right: 0;
+    z-index: 9999;
+    max-height: 600px;
+    max-width:700px;
+}
+.close-div .close-img{
+    min-width:500px;
+    min-height:200px;
+    position: relative;
+    display: none;
+    margin: auto;
+    border: 1px solid #ff6501;
+}
+
+.close-div .close{
+    border: none;
+    position: absolute;
+    display: none;
+    width:30px;
+    height:20px;
+    right:38px;
+    top:1px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.data_analyse.mapper.TaskMapper" >
+  <resultMap id="BaseResultMap" type="com.data_analyse.pojo.Task" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="receive_id" property="receiveId" jdbcType="BIGINT" />
+    <result column="publish_id" property="publishId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="introduction" property="introduction" jdbcType="VARCHAR" />
+    <result column="time_limit" property="timeLimit" jdbcType="VARCHAR" />
+    <result column="type_1" property="type1" jdbcType="CHAR" />
+    <result column="type_2" property="type2" jdbcType="CHAR" />
+    <result column="original_file" property="originalFile" jdbcType="VARCHAR" />
+    <result column="result_file" property="resultFile" jdbcType="VARCHAR" />
+    <result column="max_price" property="maxPrice" jdbcType="INTEGER" />
+    <result column="min_price" property="minPrice" jdbcType="INTEGER" />
+    <result column="determine_price" property="determinePrice" jdbcType="INTEGER" />
+    <result column="release_time" property="releaseTime" jdbcType="TIMESTAMP" />
+    <result column="receive_time" property="receiveTime" jdbcType="TIMESTAMP" />
+    <result column="completion_time" property="completionTime" jdbcType="TIMESTAMP" />
+    <result column="schedule" property="schedule" jdbcType="INTEGER" />
+    <result column="click_rate" property="clickRate" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, receive_id, publish_id, name, img, introduction, time_limit, type_1, type_2, 
+    original_file, result_file, max_price, min_price, determine_price, release_time, 
+    receive_time, completion_time, schedule, click_rate
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.data_analyse.pojo.TaskExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.data_analyse.pojo.TaskExample" >
+    delete from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.data_analyse.pojo.Task" >
+    insert into task (id, receive_id, publish_id, 
+      name, img, introduction, 
+      time_limit, type_1, type_2, 
+      original_file, result_file, max_price, 
+      min_price, determine_price, release_time, 
+      receive_time, completion_time, schedule, 
+      click_rate)
+    values (#{id,jdbcType=BIGINT}, #{receiveId,jdbcType=BIGINT}, #{publishId,jdbcType=BIGINT}, 
+      #{name,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{introduction,jdbcType=VARCHAR}, 
+      #{timeLimit,jdbcType=VARCHAR}, #{type1,jdbcType=CHAR}, #{type2,jdbcType=CHAR}, 
+      #{originalFile,jdbcType=VARCHAR}, #{resultFile,jdbcType=VARCHAR}, #{maxPrice,jdbcType=INTEGER}, 
+      #{minPrice,jdbcType=INTEGER}, #{determinePrice,jdbcType=INTEGER}, #{releaseTime,jdbcType=TIMESTAMP}, 
+      #{receiveTime,jdbcType=TIMESTAMP}, #{completionTime,jdbcType=TIMESTAMP}, #{schedule,jdbcType=INTEGER}, 
+      #{clickRate,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.data_analyse.pojo.Task" >
+    insert into task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="receiveId != null" >
+        receive_id,
+      </if>
+      <if test="publishId != null" >
+        publish_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="introduction != null" >
+        introduction,
+      </if>
+      <if test="timeLimit != null" >
+        time_limit,
+      </if>
+      <if test="type1 != null" >
+        type_1,
+      </if>
+      <if test="type2 != null" >
+        type_2,
+      </if>
+      <if test="originalFile != null" >
+        original_file,
+      </if>
+      <if test="resultFile != null" >
+        result_file,
+      </if>
+      <if test="maxPrice != null" >
+        max_price,
+      </if>
+      <if test="minPrice != null" >
+        min_price,
+      </if>
+      <if test="determinePrice != null" >
+        determine_price,
+      </if>
+      <if test="releaseTime != null" >
+        release_time,
+      </if>
+      <if test="receiveTime != null" >
+        receive_time,
+      </if>
+      <if test="completionTime != null" >
+        completion_time,
+      </if>
+      <if test="schedule != null" >
+        schedule,
+      </if>
+      <if test="clickRate != null" >
+        click_rate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="receiveId != null" >
+        #{receiveId,jdbcType=BIGINT},
+      </if>
+      <if test="publishId != null" >
+        #{publishId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="introduction != null" >
+        #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="timeLimit != null" >
+        #{timeLimit,jdbcType=VARCHAR},
+      </if>
+      <if test="type1 != null" >
+        #{type1,jdbcType=CHAR},
+      </if>
+      <if test="type2 != null" >
+        #{type2,jdbcType=CHAR},
+      </if>
+      <if test="originalFile != null" >
+        #{originalFile,jdbcType=VARCHAR},
+      </if>
+      <if test="resultFile != null" >
+        #{resultFile,jdbcType=VARCHAR},
+      </if>
+      <if test="maxPrice != null" >
+        #{maxPrice,jdbcType=INTEGER},
+      </if>
+      <if test="minPrice != null" >
+        #{minPrice,jdbcType=INTEGER},
+      </if>
+      <if test="determinePrice != null" >
+        #{determinePrice,jdbcType=INTEGER},
+      </if>
+      <if test="releaseTime != null" >
+        #{releaseTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="receiveTime != null" >
+        #{receiveTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="completionTime != null" >
+        #{completionTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="schedule != null" >
+        #{schedule,jdbcType=INTEGER},
+      </if>
+      <if test="clickRate != null" >
+        #{clickRate,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.data_analyse.pojo.TaskExample" resultType="java.lang.Integer" >
+    select count(*) from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update task
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.receiveId != null" >
+        receive_id = #{record.receiveId,jdbcType=BIGINT},
+      </if>
+      <if test="record.publishId != null" >
+        publish_id = #{record.publishId,jdbcType=BIGINT},
+      </if>
+      <if test="record.name != null" >
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.img != null" >
+        img = #{record.img,jdbcType=VARCHAR},
+      </if>
+      <if test="record.introduction != null" >
+        introduction = #{record.introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="record.timeLimit != null" >
+        time_limit = #{record.timeLimit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type1 != null" >
+        type_1 = #{record.type1,jdbcType=CHAR},
+      </if>
+      <if test="record.type2 != null" >
+        type_2 = #{record.type2,jdbcType=CHAR},
+      </if>
+      <if test="record.originalFile != null" >
+        original_file = #{record.originalFile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resultFile != null" >
+        result_file = #{record.resultFile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.maxPrice != null" >
+        max_price = #{record.maxPrice,jdbcType=INTEGER},
+      </if>
+      <if test="record.minPrice != null" >
+        min_price = #{record.minPrice,jdbcType=INTEGER},
+      </if>
+      <if test="record.determinePrice != null" >
+        determine_price = #{record.determinePrice,jdbcType=INTEGER},
+      </if>
+      <if test="record.releaseTime != null" >
+        release_time = #{record.releaseTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.receiveTime != null" >
+        receive_time = #{record.receiveTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.completionTime != null" >
+        completion_time = #{record.completionTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.schedule != null" >
+        schedule = #{record.schedule,jdbcType=INTEGER},
+      </if>
+      <if test="record.clickRate != null" >
+        click_rate = #{record.clickRate,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update task
+    set id = #{record.id,jdbcType=BIGINT},
+      receive_id = #{record.receiveId,jdbcType=BIGINT},
+      publish_id = #{record.publishId,jdbcType=BIGINT},
+      name = #{record.name,jdbcType=VARCHAR},
+      img = #{record.img,jdbcType=VARCHAR},
+      introduction = #{record.introduction,jdbcType=VARCHAR},
+      time_limit = #{record.timeLimit,jdbcType=VARCHAR},
+      type_1 = #{record.type1,jdbcType=CHAR},
+      type_2 = #{record.type2,jdbcType=CHAR},
+      original_file = #{record.originalFile,jdbcType=VARCHAR},
+      result_file = #{record.resultFile,jdbcType=VARCHAR},
+      max_price = #{record.maxPrice,jdbcType=INTEGER},
+      min_price = #{record.minPrice,jdbcType=INTEGER},
+      determine_price = #{record.determinePrice,jdbcType=INTEGER},
+      release_time = #{record.releaseTime,jdbcType=TIMESTAMP},
+      receive_time = #{record.receiveTime,jdbcType=TIMESTAMP},
+      completion_time = #{record.completionTime,jdbcType=TIMESTAMP},
+      schedule = #{record.schedule,jdbcType=INTEGER},
+      click_rate = #{record.clickRate,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.data_analyse.pojo.Task" >
+    update task
+    <set >
+      <if test="receiveId != null" >
+        receive_id = #{receiveId,jdbcType=BIGINT},
+      </if>
+      <if test="publishId != null" >
+        publish_id = #{publishId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="introduction != null" >
+        introduction = #{introduction,jdbcType=VARCHAR},
+      </if>
+      <if test="timeLimit != null" >
+        time_limit = #{timeLimit,jdbcType=VARCHAR},
+      </if>
+      <if test="type1 != null" >
+        type_1 = #{type1,jdbcType=CHAR},
+      </if>
+      <if test="type2 != null" >
+        type_2 = #{type2,jdbcType=CHAR},
+      </if>
+      <if test="originalFile != null" >
+        original_file = #{originalFile,jdbcType=VARCHAR},
+      </if>
+      <if test="resultFile != null" >
+        result_file = #{resultFile,jdbcType=VARCHAR},
+      </if>
+      <if test="maxPrice != null" >
+        max_price = #{maxPrice,jdbcType=INTEGER},
+      </if>
+      <if test="minPrice != null" >
+        min_price = #{minPrice,jdbcType=INTEGER},
+      </if>
+      <if test="determinePrice != null" >
+        determine_price = #{determinePrice,jdbcType=INTEGER},
+      </if>
+      <if test="releaseTime != null" >
+        release_time = #{releaseTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="receiveTime != null" >
+        receive_time = #{receiveTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="completionTime != null" >
+        completion_time = #{completionTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="schedule != null" >
+        schedule = #{schedule,jdbcType=INTEGER},
+      </if>
+      <if test="clickRate != null" >
+        click_rate = #{clickRate,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.data_analyse.pojo.Task" >
+    update task
+    set receive_id = #{receiveId,jdbcType=BIGINT},
+      publish_id = #{publishId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      introduction = #{introduction,jdbcType=VARCHAR},
+      time_limit = #{timeLimit,jdbcType=VARCHAR},
+      type_1 = #{type1,jdbcType=CHAR},
+      type_2 = #{type2,jdbcType=CHAR},
+      original_file = #{originalFile,jdbcType=VARCHAR},
+      result_file = #{resultFile,jdbcType=VARCHAR},
+      max_price = #{maxPrice,jdbcType=INTEGER},
+      min_price = #{minPrice,jdbcType=INTEGER},
+      determine_price = #{determinePrice,jdbcType=INTEGER},
+      release_time = #{releaseTime,jdbcType=TIMESTAMP},
+      receive_time = #{receiveTime,jdbcType=TIMESTAMP},
+      completion_time = #{completionTime,jdbcType=TIMESTAMP},
+      schedule = #{schedule,jdbcType=INTEGER},
+      click_rate = #{clickRate,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+#top-box{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.top-state{
+    min-width:1214px;
+    width: 100%;
+    height:75px;
+    margin:0 auto;
+    border-bottom:1px solid lightgray;
+    line-height: 80px;
+    position:relative;
+}
+.top-state span a{
+    color:darkorange;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left:100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:18px;
+    width:150px;
+    text-align: center;
+    border:1px solid lightgray;
+}
+.top-state span a:hover{
+    border:1px solid red;
+    background-color: white;
+    color:red;
+
+}
+.top-state span{
+    color:darkorange;
+    margin-left:40px;
+}
+.top-state-detail{
+    float: right;
+    width:378px;
+    height:50px;
+}
+.top-state-detail li{
+    float:left;
+}
+.top-state-detail li a{
+    text-decoration: none;
+    color:darkorange;
+    border-right: 1px solid lightgray;
+    padding:0 12px;
+    font-size: 16px;
+}
+.top-state-detail li a:hover {
+    text-decoration: underline;
+    color: red
+}
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 80px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+    right: 154px;
+}
+#HasLog a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 12px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#HasLog:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+#HasLog .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+#HasLog .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+#HasLog .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    width: 106px;
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    border: none;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+    border: none;
+}
+#HasLog .in-Self-Info a:hover,#HasLog .Out-Self-Info a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+    text-decoration: none;
+}
+#HasLog .top-news a{
+    font-size: 15px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .top-news span{
+    color: #9E9792;
+    margin: 0;
+}
+
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    left: 165px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    padding-right: 9px;
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color:#FF5B00;
+}
+
+.news-remind-main{
+    padding-top: 38px;
+    width: 1214px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+.news-main-right-notice{
+    min-height:800px;
+}
+#LeftList .orange{
+    color:#FF5B00;
+}
+.news-main-right{
+    float: left;
+    width:1075px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.notice-main-list{
+    border-left: 4px solid #7e7d7a;
+    padding-left: 20px;
+}
+.news-main-right-notice-title{
+    font-size: 28px;
+    font-weight: bold;
+    color:#3C3C3C;
+    padding-bottom: 5px;
+}
+.set-notice{
+    padding-left: 10px;
+    background-color: #f6f6f6;
+    height:35px;
+    line-height: 35px;
+
+}
+.set-notice a{
+    margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+    color:#000;
+    width:40px;
+    height:18px;
+    text-align: center;
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    display: block;
+}
+.set-notice .no-color{
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    color: #7e7d7a;
+}
+.news-had-no{
+    background-color: #f6f6f6;
+    width:1075px;
+    margin-top: 30px;
+    height:70px;
+    text-align: center;
+    line-height: 70px;
+    display: none;
+}
+.had-news{
+    display:none;
+}
+.footer{
+    height: 170px;
+    clear: both;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+
+.notice-main-list{
+    padding-top: 20px;
+    border-bottom:1px solid #cbcbcb;
+}
+.notice-title{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color:#FF5B00;
+    font-weight: bold;
+}
+.notice-content p{
+    padding-left: 14px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.notice-time{
+    margin: 25px 0;
+    color: #7e7d7a;
+    font-size: 14px;
+}
+.page{
+
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 222px;
+    margin:40px auto;
+}
+.page a{
+    width: 30px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px ;
+    border: 1px solid white;
+    display: block;
+    float: left;
+    color:#000;
+    border-radius: 20px;
+}
+.page a:hover{
+    color:white;
+    background-color:darkorange ;
+    border: 1px solid darkorange;
+    cursor: pointer;
+}
+.page .hover-none{
+    width:37px;
+    font-size: 12px;
+}
+.page .hover-none:hover{
+    color:#ff6501;
+    border: 1px solid white;
+    background-color: white;
+}
+.page .page-on{
+    color:white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #f86c00;
+}

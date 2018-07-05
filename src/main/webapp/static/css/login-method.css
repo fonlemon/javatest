@@ -1,0 +1,388 @@
+
+#loginMsg{
+	position: absolute;
+    top: 197px;
+    right: 263px;
+    z-index: 9;
+    color: #f86c00;
+}
+
+.login-main{
+    min-width: 1214px;
+    min-height:400px;
+    position:relative;
+}
+.login-main-del span{
+    text-align: right;
+    width:100px;
+    float:left;
+    margin-right:10px;
+    margin-top: 6px;
+}
+.login-email,.login-pass,.login-cast{
+    margin:0 auto;
+}
+.login-email input,.login-pass input,.login-cast input{
+    height:25px;
+    border-radius: 1px;
+    border:1px solid gray;
+    padding-left:5px;
+    outline: none;
+    width: 168px;
+}
+.login-cast input{
+    width:79px;
+}
+.login-cast{
+    position: relative;
+    padding-right: 73px;
+}
+#TextPrint{
+    position: absolute;
+    top:30px;
+    left: 125px;
+}
+.login-cast a{
+    width:50px;
+    background-color: #5A5A5A;
+    display: block;
+    height:25px;
+    float: right;
+}
+.login-button{
+    width:100px;
+    height:30px;
+    margin:5px auto;
+}
+.login-button .login-button-del{
+    line-height: 30px;
+    text-align:center;
+    text-decoration: none;
+    display: block;
+    width:100px;
+    border: 1px solid #f86c00;
+    background-color:#f86c00 ;
+    outline: none;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+    height:30px;
+    border-radius: 1px;
+}
+.login-main-del{
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 358px;
+    height: 335px;
+    margin: auto;
+    background-color: white;
+    position:absolute ;
+    top:25%;
+    right:10%;
+}
+#red{
+    color: red;
+}
+#orange{
+    color: #ff6501;
+}
+#green{
+    color:green;
+}
+.login-main-del p{
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    font-size: 13px;
+    color: #9E9792;
+}
+.login-main-del .login-mem{
+    text-align: right;
+    margin-top:25px;
+    margin-right:10px;
+    font-size: 12px;
+    color:gray;
+}
+.login-mem a{
+    color: #f86c00;
+}
+.login-mem a:hover{
+    text-decoration: underline;
+}
+
+.login-title{
+    width:66px;
+    margin:25px auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.login-forgot{
+    font-size: 12px;
+    text-align: right;
+    margin-top: 27px;
+
+}
+.login-forgot a{
+    color: #f86c00;
+    padding-right:10px;
+}
+.login-forgot a:hover{
+    text-decoration: underline;
+}
+.login-main img{
+    width:100%;
+    height:600px;
+}
+.footer{
+    height: 170px;
+    margin-top:30px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 14px;
+}
+ul,li{
+    list-style: none;
+}
+#top-box{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.top-state{
+    min-width:1214px;
+    width: 100%;
+    height:75px;
+    margin:0 auto;
+    border-bottom:1px solid lightgray;
+    line-height: 80px;
+    position:relative;
+}
+.top-state span a{
+    color:darkorange;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left:100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:18px;
+    width:150px;
+    text-align: center;
+    border:1px solid lightgray;
+}
+.top-state span a:hover{
+    border:1px solid red;
+    background-color: white;
+    color:red;
+
+}
+.top-state span{
+    color:darkorange;
+    margin-left:40px;
+}
+.top-state-detail{
+    float: right;
+    width:380px;
+    height:50px;
+
+}
+
+.top-state-detail li{
+    float:left;
+}
+.top-state-detail li a{
+    text-decoration: none;
+    color:darkorange;
+    border-right: 1px solid lightgray;
+    padding:0 12px;
+    font-size: 16px;
+}
+.top-state-detail li a:hover{
+    text-decoration: underline;
+    color:red
+}
+
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 80px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+    right: 154px;
+}
+#HasLog a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 12px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#HasLog:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+#HasLog .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+#HasLog .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+#HasLog .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    width: 106px;
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    border: none;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+    border: none;
+}
+#HasLog .in-Self-Info a:hover,#HasLog .Out-Self-Info a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+    text-decoration: none;
+}
+#HasLog .top-news a{
+    font-size: 15px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .top-news span{
+    color: #9E9792;
+    margin: 0;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    left: 170px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    padding-right: 8px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}
+ul,li{
+    list-style: none;
+}

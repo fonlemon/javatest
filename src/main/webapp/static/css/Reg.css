@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+ul,li{
+    list-style: none;
+}
+#top-box{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.top-state{
+    min-width:1214px;
+    width: 100%;
+    height:75px;
+    margin:0 auto;
+    border-bottom:1px solid lightgray;
+    line-height: 80px;
+    position:relative;
+}
+.top-state span a{
+    color:darkorange;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left:100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:18px;
+    width:150px;
+    text-align: center;
+    border:1px solid lightgray;
+}
+.top-state span a:hover{
+    border:1px solid red;
+    background-color: white;
+    color:red;
+
+}
+.top-state span{
+    color:darkorange;
+    margin-left:40px;
+}
+.top-state-detail{
+    float: right;
+    width:380px;
+    height:50px;
+
+}
+
+.top-state-detail li{
+    float:left;
+}
+.top-state-detail li a{
+    text-decoration: none;
+    color:darkorange;
+    border-right: 1px solid lightgray;
+    padding:0 12px;
+    font-size: 16px;
+}
+.top-state-detail li a:hover{
+    text-decoration: underline;
+    color:red
+}
+
+
+
+.Reg-logo{
+    height:76px;
+    width: 120px;
+    float: left;
+}
+.Reg-logo p{
+    font-size: 30px;
+    color: #ff9400;
+    width:120px;
+    line-height:60px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 15px;
+    padding-left: 20px;
+    border-left: 1px solid #999999;
+
+
+}
+
+.registration-type{
+    width:600px;
+    height: 50px;
+    margin-left: 374px;
+    padding-top: 250px;
+
+}
+.registration-type label{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.type{
+    float: left;
+    width: 200px;
+    height: 50px;
+    background-color: #FF8200;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+
+.registration-main{
+    width: 100%;
+    height: 600px;
+    background: url("../img/center-pic4.jpg") no-repeat center ;
+}
+.registration-main img{
+    width: 100%;
+    height:600px;
+}
+.registration-main form{
+    width: 390px;
+    height:450px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    top: 26%;
+    right: 36%;
+    display: none;
+}
+.user-type{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #FF8200;
+    margin-bottom: 30px;
+    display: none;
+}
+.rechoose{
+    float: left;
+    color: #DD000C;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+.rechoose:hover{
+    text-decoration: underline;
+}
+.registration-main-verification-pic{
+    float: left;
+    width: 80px;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: -5px;
+    background-color: black;
+}
+.registration-main-verification{
+    margin-left: 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    text-indent: 5px;
+    border:1px solid gray;
+    border-radius:2px;
+}
+.registration-main-text{
+    margin-left: 10px;
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    text-indent: 5px;
+    border:1px solid gray;
+    border-radius:2px;
+}
+.registration-main-input{
+    margin: 13px 0 13px 30px;
+    float: left;
+    height: 32px;
+    width:355px;
+    position: relative;
+}
+.registration-main-button{
+    margin-left: 125px;
+    margin-top: 20px;
+    width:180px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border:2px solid #cccccc;
+    border-radius:1px;
+    font-size: 18px;
+    color: white;
+    background-color: #cccccc;
+}
+.fa-exclamation-circle{
+   color: gray;
+}
+.fa-exclamation-circle,.fa-exclamation-triangle,.fa-check-circle{
+   margin-right: 3px;
+}
+.fa-exclamation-triangle{
+    color: crimson;
+}
+.fa-check-circle{
+    color: #08AE11;
+}
+.tip{
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 85px;
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    text-indent: 3px;
+}
+#registration-main label{
+    float: left;
+}
+.registration-main form a{
+    display: block;
+    width: 80px;
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: right;
+    height:25px;
+    line-height: 25px;
+    font-weight: bold;
+}
+#Reg-suc{
+    display: none;
+    background-color: white;
+    width:350px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right:35%;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+.suc-logo {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.suc-logo p{
+    width: 160px;
+    font-size: 30px;
+}
+.suc-logo a {
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+    width: 60px;
+    display: block;
+    font-size: 15px;
+    color: #FF5722;
+    text-decoration: none;
+}
+.fa-check{
+    text-shadow: 0  5px 4px  #999999 ;
+    color: #08AE11;
+    margin-right: 5px;
+}
+.footer{
+    height: 170px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 80px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+    right: 154px;
+}
+#HasLog a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 12px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#HasLog:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+#HasLog .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+#HasLog .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+#HasLog .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    width: 106px;
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    border: none;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+    border: none;
+}
+#HasLog .in-Self-Info a:hover,#HasLog .Out-Self-Info a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+    text-decoration: none;
+}
+#HasLog .top-news a{
+    font-size: 15px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .top-news span{
+    color: #9E9792;
+    margin: 0;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    left: 170px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    padding-right: 8px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}
+ul,li{
+    list-style: none;
+}

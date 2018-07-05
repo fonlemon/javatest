@@ -1,0 +1,109 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.PerBody{
+    width:1000px;
+    margin:0 auto;
+    min-height:800px;
+}
+ul,li{
+    list-style: none;
+}
+
+.footer{
+    clear: both;
+    height: 170px;
+    margin-top:30px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+.Per-top{
+    height:250px;
+    margin-bottom: 30px;
+    margin-top:20px;
+    background: url("../img/center-pic4.jpg") no-repeat;
+}
+.top-pic{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    padding-top:40px;
+    border-radius: 50px;
+}
+.top-pic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.top-name{
+    width: 150px;
+    height: 30px;
+
+}
+.top-text,.top-name{
+    line-height: 20px;
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.top-text {
+    width: 250px;
+    height: auto;
+}
+
+.Per-left{
+    height:400px;
+    width:150px;
+    float: left;
+    border: 1px solid #BDBDBD;
+}
+.Per-left-fixed{
+    height:400px;
+    width:150px;
+    position: fixed;
+    top:0;
+    border: 1px solid #BDBDBD;
+}
+#Per-left a{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin:2px  2px 0 18px;
+}
+
+#Per-left a:hover{
+    color: #f60000;
+}
+#Per-left li{
+    margin:2px  2px 0 18px;
+}
+#Per-left span{
+    color:#f60000;
+}
+.Per-right{
+    height: auto;
+    width:845px;
+    float: right;
+}
+#Per-left h3{
+    font-size: 16px;
+    border: 1px solid lightgray;
+    line-height:26px;
+}

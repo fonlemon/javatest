@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+#top{
+    width: 100%;
+    height: 80px; background-color: white;
+    margin-bottom: 70px;
+}
+.top{
+    width: 1000px;;
+    margin: auto;
+}
+.log-pic{
+    width: 200px;
+    height: 80px;
+    float: left;
+    background-color: #5A5A5A;
+}
+.top-search label{
+    display: block;
+    height: 35px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.top-search-text{
+    width:300px;
+    height:30px;
+    font-size: 18px;
+    float: left;
+    text-indent: 10px;
+    border-radius:3px  0 0 3px ;
+    outline: none;
+    border: 1px solid #FF5722;
+}
+.top-search-button{
+    height: 32px;
+    width: 35px;
+    border: 1px solid #FF5722;
+    outline: none;
+    cursor: pointer;
+    border-radius:0 3px 3px 0;
+    background: url("../img/top_sousuo.png") no-repeat center;
+}
+#NotLogin .log{
+    margin-top: 25px;
+    display: block;
+    float: right;
+
+    color: #FF5722;
+}
+#NotLogin .log-on{
+    color: #f86c00;
+    font-size: 18px;
+    text-decoration: none;
+}
+#NotLogin .log-on:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+#NotLogin .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    margin-left: 10px;
+    padding-left: 20px;
+    float: right;
+    text-align: center;
+    /*border-left: 1px solid #000000;*/
+}
+#NotLogin .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+#NotLogin{
+    display: block;
+}
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 80px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+}
+.log a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 10px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 15px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.log a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+.top .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.log .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+.log .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+}
+.Out-Self-Info .Out-User a{
+    width:84px;
+}
+
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+}
+#HasLog .top-news a{
+   font-size: 16px;
+}
+#HasLog .top-news{
+    line-height: 82px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 55px;
+    left: 145px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    padding-right: 8px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}
+
+ul,li{
+    list-style: none;
+}
+
+
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.news-title a:hover{
+    color: #ff9400;
+}
+.news-content{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+}
+.news-main .more{
+    color: #f86c00;
+    text-decoration: none;
+}
+.news-main .more:hover{
+    text-decoration: underline;
+    color:#ff6501;
+}
+.news-main a{
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.industry-main{
+    width:700px;
+    margin-left: 106px;
+    margin-bottom: 20px;
+    float: left;
+}
+.industry-main h2{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    background-color:#FF5722 ;
+    width: 140px;
+    height: 40px;
+    line-height: 45px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.industry-list{
+    border-bottom:1px solid lightgray;
+    width:700px;
+    padding:20px 0;
+    overflow: hidden;
+    position: relative;
+}
+.news-content-more{
+    overflow: hidden;
+    display: block;
+    width: 300px;
+    margin-left: 206px;
+    margin-top:15px;
+}
+.industry-list:hover{
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+.industry-list img,.industry-list-img{
+    width:200px;
+    height:130px;
+    /*float: left;*/
+}
+.industry-list-img{
+    float: left;
+}
+.put-time{
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+    color:gray;
+}
+.clear{
+    clear:both;
+}
+.industry-box{
+    width:1214px;
+    margin:0 auto;
+    min-height:500px;
+    position: relative;
+}
+.page{
+
+    /*border:1px solid red;*/
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 640px;
+    margin:40px auto;
+}
+.page a{
+    width: 36px;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px ;
+    border: 1px solid white;
+    display: block;
+    float: left;
+    color:#000;
+    border-radius: 20px;
+}
+.page a:hover{
+    color:white;
+    background-color:darkorange ;
+    border: 1px solid darkorange;
+    cursor: pointer;
+}
+.page .hover-none:hover{
+    color:#000;
+    border: 1px solid white;
+    background-color: white;
+}
+.page .page-on{
+    color:white;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #f86c00;
+}
+.industry-news{
+    min-height: 500px;
+    width:260px;
+    position:absolute;
+    top:0;
+    right:90px;
+    padding:0 5px;
+}
+.industry-news h2{
+    font-size: 22px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 2px solid #FF5722;
+    margin:20px 0;
+    padding-left: 10px;
+    /*color:#FF5722;*/
+}
+.industry-news-list{
+    position:relative;
+    border-bottom: 1px dashed lightgray;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: gray;
+}
+.industry-news-list a{
+    text-decoration: none;
+    color:gray;
+}
+.industry-news-list a:hover{
+    text-decoration: underline;
+    color:#FF5722;
+}
+.industry-news-list span{
+    position: absolute;
+    right:0;
+    bottom: 5px;
+}
+.news-h2{
+    border-bottom: 3px solid #FF5722;
+}
+.footer{
+    height: 170px;
+    width:1214px;
+    margin:50px auto;
+}
+
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}

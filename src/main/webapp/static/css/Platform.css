@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+#top{
+    width: 100%;
+    height: 80px; background-color: white;
+}
+.top{
+    width: 1000px;;
+    margin: auto;
+}
+.log-pic{
+    width: 200px;
+    height: 80px;
+    float: left;
+    background-color: #5A5A5A;
+}
+.top-search label{
+    display: block;
+    height: 35px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.top-search-text{
+    width:300px;
+    height:30px;
+    font-size: 18px;
+    float: left;
+    text-indent: 10px;
+    border-radius:3px  0 0 3px ;
+    outline: none;
+    border: 1px solid #FF5722;
+}
+.top-search-button{
+    height: 32px;
+    width: 35px;
+    border: 1px solid #FF5722;
+    outline: none;
+    cursor: pointer;
+    border-radius:0 3px 3px 0;
+    background: url("../img/top_sousuo.png") no-repeat center;
+}
+.log{
+    margin-top: 25px;
+    display: block;
+    float: right;
+
+    color: #FF5722;
+}
+.log-on{
+    color: #f86c00;
+    font-size: 18px;
+    text-decoration: none;
+}
+.log-on:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+.back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    margin-left: 10px;
+    padding-left: 20px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #000000;
+}
+.back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.footer{
+    height: 170px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+
+.platform-logo{
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+    padding-top: 30px;
+    border-bottom:2px solid #8C7176;
+}
+.platform-logo label{
+    color: #5A5A5A;
+    line-height: 30px;
+    height: 30px;
+    float:right;
+    font-size: 16px;
+    margin-top: 20px; ;
+}
+.logo-search{
+    width: 150px;
+    text-indent: 3px;
+    outline: none;
+    border: 1px solid #8C7176;
+    border-radius: 3px;
+}
+.logo-sunbmit{
+    width: 40px;
+    background-color: #FF5722;
+    color: #ffffff;
+    border: 1px solid #FF5722;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.platform-information{
+    width: 1000px;
+    margin: auto;
+    height: 650px;
+}
+.platform-main{
+    padding-top:20px;
+    float: right;
+    width:800px;
+    height: 520px;
+}
+.platform-main-text{
+    width: 800px;
+    height: 100px;
+    border-bottom: 1px dashed #5A5A5A;
+}
+.platform-main-text img{
+    margin-top: 10px;
+    float: left;
+}
+.platform-box{
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 500px;
+    height: 80px;
+    float: left;
+}
+.platform-title{
+    width: 540px;
+    height: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.platform-title:hover{
+    color: #ff9400;
+    text-decoration: underline;
+}
+.platform-box p{
+    padding-top: 5px;
+    color: #5A5A5A;
+    width: 490px;
+    height: 58px;
+    overflow: hidden;
+    line-height: 20px;
+}
+.platform-time{
+    color: #5A5A5A;
+    float: right;
+    margin-top: 80px;
+}
+.platform-text{
+    float: left;
+    width: 180px;
+    height: 540px;
+}
+.platform-logo-text{
+    float: right;
+    width: 35px;
+    height: 507px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border-right: 4px solid #f86c00;
+}
+.logo-text{
+    width: 25px;
+    line-height: 25px;
+    background-color: #FF5722;
+    font-size: 25px;
+    color: white;
+    float: right;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.platform-page{
+    padding-top: 20px;
+    width: 490px;
+    height: 40px;
+    clear: both;
+    margin: auto;
+}
+.page,.page1,.page2{
+    display: block;
+    height:40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+
+}
+.page,.page2{
+    width: 42px;
+    margin-right: 5px;
+    border: 1px solid #ffffff;
+}
+.page1{
+    width: 40px;
+    margin: 0 10px;
+}
+.click,.page:hover,.page1:hover{
+    background-color: #FF5722;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLog .log-on:hover{
+    text-decoration: none;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 31px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+}
+.log a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 10px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: -9px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.log a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+.top .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.log .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+.log .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 29px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+}
+.Out-Self-Info .Out-User a{
+    width:84px;
+}
+
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+}
+#HasLog .top-news a{
+    font-size: 16px;
+}
+#HasLog .top-news{
+    line-height: 31px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 29px;
+    left: 145px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    padding-right: 8px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}
+
+
+
+ul,li{
+    list-style: none;
+}

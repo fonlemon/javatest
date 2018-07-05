@@ -1,0 +1,71 @@
+.industry-detail-main{
+    width:1214px;
+    min-height: 500px;
+    position: relative;
+    margin:0 auto;
+}
+.industry-list-detail{
+    width:700px;
+    min-height: 500px;
+    margin-left: 106px;
+}
+.industry-title-box{
+    width:690px;
+    height:85px;
+    border-bottom: 1px dashed lightgray;
+    padding-left: 10px;
+}
+.industry-title-box h1{
+    font-size: 26px;
+    padding-bottom: 7px;
+    margin:20px auto;
+}
+.industry-title-box p{
+    position: relative;
+    color: gray;
+}
+.change-content{
+    text-align: right;
+    position: absolute;
+    right:15px;
+}
+.industry-title-box p a{
+    text-decoration: none;
+    color:gray;
+}
+.industry-title-box a:hover{
+    text-decoration: underline;
+    color:#FF5722;
+    cursor: pointer;
+}
+.img-title{
+    width:300px;
+    height:250px;
+    float:left;
+    margin-right:25px;
+    margin-bottom: 10px;
+}
+.industry-content{
+    padding: 0 10px;
+}
+.industry-content p{
+    color: #404040;
+    text-indent: 2em;
+    margin: 28px 0 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+.back-top a{
+    width:46px;
+    height:47px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(../img/back.png) no-repeat left top;
+    margin-left:610px;
+    display: none;
+    cursor: pointer;
+}
+.back-top a:hover{
+    background:url(../img/back.png) no-repeat left -47px;
+}

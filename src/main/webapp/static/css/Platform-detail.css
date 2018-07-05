@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+#top{
+    width: 100%;
+    height: 80px; background-color: white;
+}
+.top{
+    width: 1000px;;
+    margin: auto;
+}
+.log-pic{
+    width: 200px;
+    height: 80px;
+    float: left;
+    background-color: #5A5A5A;
+}
+.top-search label{
+    display: block;
+    height: 35px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.top-search-text{
+    width:300px;
+    height:30px;
+    font-size: 18px;
+    float: left;
+    text-indent: 10px;
+    border-radius:3px  0 0 3px ;
+    outline: none;
+    border: 1px solid #FF5722;
+}
+.top-search-button{
+    height: 32px;
+    width: 35px;
+    border: 1px solid #FF5722;
+    outline: none;
+    cursor: pointer;
+    border-radius:0 3px 3px 0;
+    background: url("../img/top_sousuo.png") no-repeat center;
+}
+.log{
+    margin-top: 25px;
+    display: block;
+    float: right;
+
+    color: #FF5722;
+}
+.log-on{
+    color: #f86c00;
+    font-size: 18px;
+    text-decoration: none;
+}
+.log-on:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+.back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    margin-left: 10px;
+    padding-left: 20px;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #000000;
+}
+.back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.footer{
+    height: 170px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+
+
+ .detail-box{
+     padding-top: 70px;
+     width: 1000px;
+     margin: auto;
+ }
+.postion,.postion a{
+    font-size: 20px;
+    color: #5A5A5A;
+    text-decoration: none;
+}
+.postion a:hover{
+    text-decoration:underline;
+}
+.detail-title{
+    padding-top: 24px;
+    width: 1000px;
+    height: 40px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px double #999999;
+}
+.detail-tip{
+    text-align: center;
+    width:auto;
+    height: 40px;
+    margin-left: 310px;
+}
+.detail-tip a{
+    display: block;
+    font-size: 15px;
+    padding: 0 15px;
+    float: left;
+}
+.detail-tip span{
+    padding: 0 10px;
+}
+.detail-tip a i{
+    margin-right:10px;
+    cursor: pointer;
+}
+#detail-main{
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 800px;
+    margin: auto;
+    min-height: 300px;
+}
+#detail-main img{
+    float: right;
+    width: 335px;
+    height:235px;
+}
+#detail-main h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#detail-main p{
+    font-size: 15px;
+    text-indent: 18px;
+    vertical-align: top;
+
+}
+
+
+
+
+.back-top a{
+    width:46px;
+    height:47px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(../img/back.png) no-repeat left top;
+    margin-left:610px;
+    display: none;
+}
+.fa{
+    margin-left: -18px;
+    padding-top: 3px;
+    float: left;
+    margin-right:28px;
+    cursor: pointer;
+}
+.back-top a:hover{
+    background:url(../img/back.png) no-repeat left -47px;
+}
+
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 5px;
+    color: darkorange;
+    font-size: 16px;
+}
+#HasLog .log-on:hover{
+    text-decoration: none;
+}
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 31px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+}
+.log a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 10px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: -9px;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.log a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+.top .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.log .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+.log .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 29px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+}
+.Out-Self-Info .Out-User a{
+    width:84px;
+}
+
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+}
+#HasLog .top-news a{
+    font-size: 16px;
+}
+#HasLog .top-news{
+    line-height: 31px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    position: absolute;
+    top: 29px;
+    left: 145px;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:30px;
+    line-height: 30px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    padding-right: 8px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}
+
+
+ul,li{
+    list-style: none;
+}

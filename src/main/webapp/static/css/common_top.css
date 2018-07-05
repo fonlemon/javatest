@@ -1,0 +1,246 @@
+@CHARSET "UTF-8";
+.top-state{
+    min-width:1214px;
+    width: 100%;
+    height:75px;
+    margin:0 auto;
+    border-bottom:1px solid lightgray;
+    line-height: 80px;
+    position:relative;
+}
+.top-state span a{
+    color:darkorange;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left:100px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:18px;
+    width:150px;
+    text-align: center;
+    border:1px solid lightgray;
+}
+.top-state span a:hover{
+    border:1px solid red;
+    background-color: white;
+    color:red;
+
+}
+
+.top-state span{
+    color:darkorange;
+    margin-left:40px;
+}
+.top-search{
+    float:right;
+    margin-right:50px;
+    position: absolute;
+    top:18px;
+    left:460px;
+}
+.top-state-detail{
+    float: right;
+    width:240px;
+    height:50px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+.top-state-detail-text{
+    height: 40px;
+    outline: none;
+    text-indent: 5px;
+    border: 2px solid darkorange;
+    border-right: none;
+    width: 350px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.top-state-detail-bottom{
+    text-align: right;
+    outline: none;
+    width: 85px;
+    color: white;
+    padding-right: 15px;
+    border: 2px solid darkorange;
+    height: 44px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    background: url(../img/top-search-btto.png) no-repeat 10px center #FF8200;
+    background-size: 23px;
+}
+.top-state-detail-bottom:hover{
+    background: url(../img/top-search-btto1.png) no-repeat 10px center #f60000;
+    background-size: 23px;
+    color:white;
+    border: 2px solid #f60000;
+
+}
+.top-state-detail li{
+    float:left;
+}
+.top-state-detail #top li a{
+    text-decoration: none;
+    color:darkorange;
+    border-right: 1px solid lightgray;
+    padding:0 20px;
+    font-size: 16px;
+}
+.top-state-detail li .self-center{
+    border-right: none;
+}
+.top-state-detail #top li a:hover{
+    text-decoration: underline;
+    color:red
+}
+
+#HasLog .log-on{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: darkorange;
+    font-size: 16px;
+}
+
+#HasLogin{
+    display: none;
+}
+#HasLog{
+    line-height: 55px;
+    float: right;
+    font-size: 16px;
+    position: relative;
+    width: 255px;
+    right: 45px;
+}
+#HasLog a{
+    color:#9E9792;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 12px;
+}
+#HasLog img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: -55px;
+}
+.log li{
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+}
+#HasLog:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog.log-on:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+#HasLog .back-Main{
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
+    display: block;
+    float: right;
+    text-align: center;
+    border: none;
+}
+#HasLog .back-Main:hover{
+    text-decoration: underline;
+    color: black;
+}
+#HasLog .Out-Self-Info{
+    position: relative;
+    display: none;
+}
+#HasLog .in-Self-Info{
+    position: relative;
+    color:#9E9792;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+.Out-User{
+    width: 106px;
+    border:1px solid #9E9792;
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    display: none;
+    z-index: 99999;
+}
+#HasLog .Out-User li{
+    line-height: 28px;
+    margin-left: 0;
+    border: none;
+    background-color: white;
+}
+.in-Self-Info .Out-User a,.Out-Self-Info .Out-User a{
+    padding-left: 10px;
+    width:84px;
+    color: #9E9792;
+    display: block;
+    text-decoration: none;
+    border: none;
+}
+#HasLog .in-Self-Info a:hover,#HasLog .Out-Self-Info a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog  .Out-User li a:hover{
+    background-color: #cbcbcb;
+    color:white;
+    text-decoration: none;
+}
+#HasLog .top-news a{
+    font-size: 15px;
+}
+#HasLog .top-news a:hover{
+    text-decoration: underline;
+    color:#000;
+}
+#HasLog .top-news span{
+    color: #9E9792;
+    margin: 0;
+}
+#HasLog .news-detail{
+    background-color: white;
+    border: 1px solid #9E9792;
+    top: 45px;
+    left: -10px;
+    position: absolute;
+    display: none;
+    z-index: 99999;
+
+}
+#HasLog .news-detail li{
+    font-size: 14px;
+    float: none;
+    height:31px;
+    width: 77px;
+    line-height: 31px;
+    margin: 0;
+}
+#HasLog .news-detail li a{
+    display: block;
+    padding-left: 4px;
+    border: none;
+    font-size: 14px;
+    padding-right: 4px;
+}
+#HasLog .news-detail a:hover{
+    background-color: #cbcbcb;
+    color: white;
+    text-decoration: none;
+}
+#HasLog .news-detail .news-orange{
+    color: #FF5B00;
+
+}

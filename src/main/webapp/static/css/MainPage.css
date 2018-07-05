@@ -1,0 +1,458 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+ul,li{
+    list-style: none;
+}
+#top-box{
+    width: 100%;
+    height: 130px; background-color: white;
+}
+
+.news-main{
+    vertical-align: bottom;
+    width:500px;
+    /*float: left;*/
+    padding-left:10px ;
+    margin-top: 10px;
+
+}
+.news-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fa-search{
+    background: #FF5722;
+}
+#content-list{
+    margin: auto;
+    width:1214px;
+    height: 541px;
+    background-color: white;
+}
+#content-list,#content-task,#content-exhibition, .footer{
+    margin: auto;
+    width: 1214px;
+    overflow: hidden;
+}
+.content-list{
+    float: left;
+    width: 200px;
+}
+.content-pic{
+    float: right;
+    width:1010px;
+}
+.content-list-bigbox{
+    height: 60px;
+    width: 198px;
+    border: 1px solid #FF5722;
+}
+.content-list-box{
+	height: 35px;
+    width: 198px;
+    border: 1px solid #FF5722;
+}
+.content-list-bigbox{
+    background-color: #DD000C;
+}
+.content-list-box:hover{
+    border: 1px solid #dd000c;
+    border-right:none;
+    background-color: #dd000c;
+}
+.content-list-box{
+    background-color: #FF5722;
+    position: relative;
+}
+.list{
+    display: block;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.content-list-box p{
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+    color: white;
+}
+.content-box-text,.content-list-box p{
+    margin-left: 20px;
+}
+.content-box-text{
+    display: block;
+    overflow: hidden;
+    width: 180px;
+    height: 20px;
+}
+.content-list-box a{
+    color: #eb8127;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.content-list-box a:hover{
+    color: #FF8200;
+    text-decoration: underline;
+}
+.content-list-box .content-list-title{
+	color:#666;
+	font-weight:bolder;
+	font-size:18px;
+	margin:10px 0;
+}
+.content-list-box .content-list-main{
+	margin-top:5px;
+	position: absolute;
+    left: -5px;
+    top: 50px;
+}
+.box-detail,.box-detail1{
+    width:400px;
+    height: 160px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 199px;
+    border: 1px solid #000000;
+    border-left: none;
+    z-index: 99;
+    display: none;
+}
+.box-detail{
+    top:-2px;
+}
+.index-screen{
+    width:1012px;
+    height:480px;
+    position: relative;
+    overflow: hidden;
+    left: 1px;
+    top: 60px;
+}
+.index-screen .index-screen-img{
+    width:99999px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.index-screen-img img{
+    float:left;
+    width:1020px;
+    height:540px;
+}
+#screen_bo{
+    position:absolute;
+    height:10px;
+    width:162px;
+    z-index:2;
+    bottom: 20px;
+    left:438px;
+}
+#screen_bo span{
+    cursor:pointer;
+    float:left;
+    border:1px solid #fff;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:white;
+    margin-right:27px;
+}
+#screen_bo .on{
+    background-color: #8C7176;
+    border: 1px solid lightgray;
+}
+.arrow{
+    cursor:pointer;
+    float:left;
+    display:none;
+    line-height:39px;
+    font-size: 36px;
+    font-weight: bold;
+    width:40px;
+    height:40px;
+    position:absolute;
+    z-index:2;
+    top:195px;
+    background-color:RGBA(0,0,0,.3);
+    color:#fff;
+}
+.arrow:hover{
+    background-color:RGBA(0,0,0,.7);
+}
+.arrow{
+    text-decoration: none;
+}
+#index_screen:hover .arrow{
+    display:block;
+}
+#prev{
+    left:1px;
+    text-align: center;
+}
+#next{
+    right:0;
+    text-align: center;
+}
+#content-message{
+    height: 870px;
+    width:1214px;
+    margin: auto;
+}
+.content-message-Method{
+    margin-top: 50px;
+    height: 760px;
+    width: 220px;
+    float: left;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.content-message-industry{
+    margin-top: 50px;
+    height: 760px;
+    width: 400px;
+    float: left;
+    margin-left: 150px;
+}
+.content-message-platform{
+    margin-top: 50px;
+    height: 760px;
+    width:320px;
+    float: right;
+}
+.content-message-top{
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border-bottom:4px double darkorange ;
+    font-size: 25px;
+    color: darkorange;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.content-message-top a{
+    color: rgba(160, 154, 159, 0.98);
+    display: block;
+    float: right;
+    height: 20px;
+    margin-top:12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.content-message-top a:hover{
+    text-decoration: underline;
+}
+.content-message-Method-message{
+    height: 60px;
+    width: 100%;
+}
+.id{
+    font-size: 30px;
+    border-right: 2px solid #000000;
+    width: 35px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 30px;
+    float: left;
+}
+.message{
+    float: right;
+    width: 165px;
+    background-color: white;
+    height: 50px;
+    margin-top: 10px;
+}
+.message a{
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 50px;
+    color: #000000;
+}
+.message a:hover{
+    text-decoration: underline;
+    color: #dd000c;
+}
+.message a:visited{
+    color: #000000;
+}
+.industry-message a{
+    font-size:20px;
+    line-height: 38px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.industry-message a:hover{
+    text-decoration: underline;
+}
+.platform{
+    height: 90px;
+    width: 100%;
+    background-color:#ffffff;
+}
+.platform-message{
+    float: right;
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+}
+.platform-message a{
+    text-decoration: none;
+    font-size:18px;
+    display: block;
+    margin-top: 10px;
+    color: #8c7176;
+    text-align: center;
+}
+.platform-message a:hover{
+    text-decoration: underline;
+    color: #FF5722;
+}
+.platform-message p{
+    color: rgba(160, 154, 159, 0.98);
+    font-size: 13px;
+    display: block;
+    margin-top: 14px;
+    height: 16px;
+    overflow: hidden;
+}
+#content-task{
+    height: 810px;
+}
+.task-top{
+    border-bottom: 5px double #FF5722;
+    height: 40px;
+}
+.task-top-text,.exhibition-top-text{
+    position: relative;
+    top: 19px;
+    left: 520px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 101;
+    background-color: white;
+}
+.task-top-text{
+    width: 124px;
+}
+.exhibition-top-text{
+    width: 186px;
+}
+.task-message{
+    height: 360px;;
+    margin-top: 14px;
+    float: left;
+}
+.task-message-Exhibition{
+    width: 320px;
+    height: 320px;
+    float: left;
+    margin: 20px 40px;
+    background-color: #ffffff;
+}
+.task-message-Exhibition-text{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color:  rgba(160, 154, 159, 0.98);
+}
+.task-message-Exhibition-price{
+    color: #FF5722;
+    width: 100px;
+    font-size: 15px;
+    float: left;
+    margin-left: 5px;
+}
+.task-message-Exhibition-price a {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FF5722;
+    text-decoration: none;
+}
+.task-message-Exhibition-price a:hover{
+    text-decoration: underline;
+}
+.task-message-Exhibition-time{
+    float: right;
+    width: auto;
+    text-align: center;
+    height: 20px;
+    margin-top:10px;
+    color: rgba(160, 154, 159, 0.98);
+    line-height: 20px;
+    font-size: 14px;
+}
+#content-exhibition{
+    height: 900px
+}
+.case-exhibition{
+    width: 380px;
+    height: 358px;
+    background-color: white;
+    float: left;
+    margin: 20px 12px;
+}
+.case-exhibition-text a:hover,.task-message-Exhibition-text:hover,.content-list-little a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#000000;
+}
+.case-exhibition-text{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.case-exhibition-text a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#000000 ;
+}
+.footer{
+    height: 170px;
+}
+.footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#BDBDBD;
+    margin-bottom: 20px;
+
+}
+.footer p{
+    text-align: center;
+    color:#BDBDBD;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.a-margin{
+    padding-top: 40px;
+}
+.back-top a{
+    width:46px;
+    height:47px;
+    position:fixed;
+    right:10px;
+    bottom:20px;
+    background:url(../img/back.png) no-repeat left top;
+    margin-left:610px;
+    display: none;
+    cursor: pointer;
+}
+.back-top a:hover{
+    background:url(../img/back.png) no-repeat left -47px;
+}
